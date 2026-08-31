@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f3f1e8">
+  <meta name="description" content="方块节拍：一款无需安装的俄罗斯方块小游戏。方向键移动旋转，空格落到底，消行刷新纪录。">
+  <title>方块节拍 · Block Beat</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="engine.js" defer></script>
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="./index.html" aria-label="方块节拍首页">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span>BLOCK<span class="brand-light">BEAT</span><small>方 块 节 拍</small></span>
+      </a>
+      <div class="top-actions"><span class="edition">VOL. 01 / 经典消行</span><button id="sound" class="icon-button" aria-pressed="true">♪ 音效开</button><button id="help" class="icon-button">怎么玩 <span aria-hidden="true">↗</span></button></div>
+    </header>
+
+    <main class="studio">
+      <aside class="left-panel">
+        <div class="intro"><div class="eyebrow"><span class="signal"></span> SMALL GAME. BIG FOCUS.</div><h1>下一块，<br><span>刚刚好。</span></h1><p>把杂乱变整齐。<br>在消除的瞬间，找回节奏。</p></div>
+        <section class="score-card" aria-label="游戏得分">
+          <div class="card-label">本局得分 <span>SCORE</span></div><div id="score" class="score">000000</div>
+          <div class="best-row"><span>个人最佳</span><b id="best">0</b><span class="star" aria-hidden="true">✦</span></div>
+        </section>
+        <section class="hold-card"><div class="card-label">暂存 <kbd>C</kbd></div><canvas id="hold" width="180" height="90" aria-label="暂存方块"></canvas><p id="hold-note">给下一步留个选择</p></section>
+        <div class="small-print">不赶时间，先找好位置。<br><span>最高分仅保存在这台设备。</span></div>
+      </aside>
+
+      <section class="play-area" aria-label="俄罗斯方块游戏区域">
+        <div class="board-bar"><span><i id="status-dot"></i><b id="status">准备就绪</b></span><span id="clock">00:00</span></div>
+        <div class="board-shell" id="board-shell">
+          <canvas id="board" width="600" height="1200" tabindex="0" role="img" aria-label="10 列 20 行方块棋盘。方向键移动和旋转，空格硬降，C 暂存，P 暂停。"></canvas>
+          <div id="toast" class="toast" aria-hidden="true"></div>
+          <div id="overlay" class="overlay">
+            <div class="overlay-card">
+              <div class="mini-blocks" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+              <div id="overlay-tag" class="eyebrow">READY WHEN YOU ARE</div>
+              <h2 id="overlay-title">落下第一块。</h2>
+              <p id="overlay-copy">移动、旋转、填满一行。<br>一小局，换一个好心情。</p>
+              <button id="play" class="primary">开始游戏 <span aria-hidden="true">↗</span></button>
+              <small id="overlay-hint">方向键操作 · 空格快速落下</small>
+            </div>
+          </div>
+        </div>
+        <div class="board-footer"><span>10 × 20</span><span>MAKE ROOM FOR THE NEXT.</span></div>
+      </section>
+
+      <aside class="right-panel">
+        <section class="next-card"><div class="card-label">接下来 <span>NEXT / 03</span></div><canvas id="next" width="180" height="252" aria-label="接下来的三个方块"></canvas></section>
+        <section class="mobile-hold"><div class="card-label">暂存</div><canvas id="mobile-hold" width="180" height="80" aria-label="触屏暂存方块"></canvas></section>
+        <section class="stats-card"><div class="stat"><span>当前等级</span><strong id="level">01</strong></div><div class="stat"><span>已消行数</span><strong id="lines">00</strong></div><div class="progress-track" role="progressbar" aria-label="距离下一级" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" id="level-progress"><i id="progress-fill"></i></div><p id="progress-label">再消 10 行，节奏升级</p></section>
+        <div class="game-actions"><button id="pause" class="secondary" disabled>Ⅱ 暂停 <kbd>P</kbd></button><button id="restart" class="text-button">↻ 重新开始</button></div>
+        <div class="tip"><span>小提示</span><p>空心方块是落点预览，<br>按空格直接落到底。</p></div>
+      </aside>
+    </main>
+
+    <section class="touch-controls" aria-label="触屏操作">
+      <button data-action="hold" aria-label="暂存方块">暂存</button><button data-action="rotate" aria-label="顺时针旋转">↻<small>旋转</small></button><button data-action="drop" class="drop-button" aria-label="快速落下">⇣<small>落到底</small></button>
+      <button data-action="left" aria-label="向左移动">←</button><button data-action="down" aria-label="加速下落">↓</button><button data-action="right" aria-label="向右移动">→</button>
+    </section>
+    <footer class="page-footer"><div class="key-guide"><span><kbd>←</kbd><kbd>→</kbd> 移动</span><span><kbd>↑</kbd> 旋转</span><span><kbd>↓</kbd> 加速</span><span><kbd>SPACE</kbd> 落到底</span></div><span class="made-with">MADE WITH <b>GAME STUDIO PLUS 4.0</b></span></footer>
+    <p id="live" class="sr-only" role="status" aria-live="polite"></p>
+    <details id="qa-panel" class="qa-panel" hidden><summary>开发验证工具（预置场景，不计入个人最佳）</summary><div class="qa-buttons"><button data-fixture="single">单行场景</button><button data-fixture="four">四行场景</button><button data-fixture="level">升级场景</button><button data-fixture="over">结束场景</button><button id="qa-cleanup">清理测试记录</button></div><pre id="game-state"></pre></details>
+  </div>
+
+  <dialog id="help-dialog" aria-labelledby="help-title"><button id="close-help" class="close-button" aria-label="关闭操作说明">×</button><div class="eyebrow">HOW TO PLAY</div><h2 id="help-title">把一行填满，<br>为下一块腾出空间。</h2><p>左右移动、旋转方块，让每一行没有空隙。填满的行会消失，方块堆到顶部时游戏结束。</p><dl><div><dt>← / →</dt><dd>左右移动，长按连续移动</dd></div><div><dt>↑ / X / Z</dt><dd>顺时针 / 逆时针旋转（Z）</dd></div><div><dt>↓ / 空格</dt><dd>加速下落 / 立即落到底</dd></div><div><dt>C / Shift</dt><dd>暂存或交换，每块一次</dd></div><div><dt>P / Esc</dt><dd>暂停或继续</dd></div></dl><p class="rules">一次消 1 / 2 / 3 / 4 行：100 / 300 / 500 / 800 × 当前等级。每 10 行升级。软降每格 +1，硬降每格 +2。采用简化踢墙，无 T-spin 加分。</p><button id="help-done" class="primary">知道了，来一局 ↗</button></dialog>
+</body>
+</html>
