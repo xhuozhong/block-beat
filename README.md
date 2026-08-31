@@ -6,6 +6,10 @@
 
 ## 直接游玩
 
+**[点击在线试玩 → 方块节拍](https://xhuozhong.github.io/block-beat/)**
+
+GitHub Pages 托管，可直接在浏览器游玩，无需安装。电脑用键盘，手机用屏幕按钮。
+
 在仓库选择 **Code → Download ZIP**，解压后打开 `index.html`。代码按现代浏览器离线运行设计，无需 Python、Node、账号或联网。所有脚本与素材都在本目录；不要只复制 HTML 文件。自动化验收使用 Chromium 的 HTTP 预览；直接文件启动及其他浏览器仍需手动检查。
 
 若需要本地网页地址，在本目录运行 `python -m http.server 8766 --bind 127.0.0.1`，打开 `http://127.0.0.1:8766`。服务器仅用于本地预览，不是公网部署。
