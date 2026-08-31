@@ -1,0 +1,1421 @@
+[
+  {
+    "test": "normal keyboard journey",
+    "state": {
+      "status": "paused",
+      "score": 38,
+      "lines": 0,
+      "level": 1,
+      "elapsed": 449,
+      "held": "O",
+      "holdUsed": false,
+      "next": [
+        "J",
+        "Z",
+        "T"
+      ],
+      "seed": 1464656704,
+      "active": {
+        "type": "S",
+        "x": 3,
+        "y": -1,
+        "rotation": 0,
+        "id": 3,
+        "cells": [
+          {
+            "x": 4,
+            "y": -1
+          },
+          {
+            "x": 5,
+            "y": -1
+          },
+          {
+            "x": 3,
+            "y": 0
+          },
+          {
+            "x": 4,
+            "y": 0
+          }
+        ],
+        "ghostY": 17
+      },
+      "board": [
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "...IIII..."
+      ],
+      "lastClear": 0,
+      "fixture": null,
+      "best": 38,
+      "muted": false,
+      "audio": {
+        "state": "running",
+        "cueCount": 3,
+        "voices": 0
+      },
+      "lastEvents": [
+        {
+          "id": 1,
+          "type": "start",
+          "pieceId": 1
+        },
+        {
+          "id": 2,
+          "type": "move",
+          "pieceId": 1
+        },
+        {
+          "id": 3,
+          "type": "hold",
+          "pieceId": 2
+        },
+        {
+          "id": 4,
+          "type": "drop",
+          "pieceId": 2,
+          "distance": 19,
+          "points": 38,
+          "cells": [
+            {
+              "x": 3,
+              "y": 19
+            },
+            {
+              "x": 4,
+              "y": 19
+            },
+            {
+              "x": 5,
+              "y": 19
+            },
+            {
+              "x": 6,
+              "y": 19
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "type": "lock",
+          "pieceId": 2,
+          "cells": [
+            {
+              "x": 3,
+              "y": 19
+            },
+            {
+              "x": 4,
+              "y": 19
+            },
+            {
+              "x": 5,
+              "y": 19
+            },
+            {
+              "x": 6,
+              "y": 19
+            }
+          ],
+          "color": "I"
+        },
+        {
+          "id": 6,
+          "type": "pause",
+          "pieceId": 3
+        }
+      ]
+    }
+  },
+  {
+    "test": "pause stable across tool calls",
+    "elapsed": 449
+  },
+  {
+    "test": "单行场景",
+    "state": {
+      "status": "paused",
+      "score": 138,
+      "lines": 1,
+      "level": 1,
+      "elapsed": 357,
+      "held": null,
+      "holdUsed": false,
+      "next": [
+        "L",
+        "O",
+        "J"
+      ],
+      "seed": 20260831,
+      "active": {
+        "type": "I",
+        "x": 3,
+        "y": -1,
+        "rotation": 0,
+        "id": 3,
+        "cells": [
+          {
+            "x": 3,
+            "y": 0
+          },
+          {
+            "x": 4,
+            "y": 0
+          },
+          {
+            "x": 5,
+            "y": 0
+          },
+          {
+            "x": 6,
+            "y": 0
+          }
+        ],
+        "ghostY": 17
+      },
+      "board": [
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "....OO...."
+      ],
+      "lastClear": 1,
+      "fixture": "single",
+      "best": 39,
+      "muted": false,
+      "audio": {
+        "state": "running",
+        "cueCount": 7,
+        "voices": 0
+      },
+      "lastEvents": [
+        {
+          "id": 2,
+          "type": "drop",
+          "pieceId": 2,
+          "distance": 19,
+          "points": 38,
+          "cells": [
+            {
+              "x": 4,
+              "y": 18
+            },
+            {
+              "x": 5,
+              "y": 18
+            },
+            {
+              "x": 4,
+              "y": 19
+            },
+            {
+              "x": 5,
+              "y": 19
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "type": "lock",
+          "pieceId": 2,
+          "cells": [
+            {
+              "x": 4,
+              "y": 18
+            },
+            {
+              "x": 5,
+              "y": 18
+            },
+            {
+              "x": 4,
+              "y": 19
+            },
+            {
+              "x": 5,
+              "y": 19
+            }
+          ],
+          "color": "O"
+        },
+        {
+          "id": 4,
+          "type": "clear",
+          "pieceId": 2,
+          "count": 1,
+          "rows": [
+            19
+          ],
+          "points": 100,
+          "score": 138
+        },
+        {
+          "id": 5,
+          "type": "pause",
+          "pieceId": 3
+        }
+      ]
+    }
+  },
+  {
+    "test": "四行场景",
+    "state": {
+      "status": "paused",
+      "score": 834,
+      "lines": 4,
+      "level": 1,
+      "elapsed": 340,
+      "held": null,
+      "holdUsed": false,
+      "next": [
+        "L",
+        "O",
+        "J"
+      ],
+      "seed": 20260831,
+      "active": {
+        "type": "I",
+        "x": 3,
+        "y": -1,
+        "rotation": 0,
+        "id": 3,
+        "cells": [
+          {
+            "x": 3,
+            "y": 0
+          },
+          {
+            "x": 4,
+            "y": 0
+          },
+          {
+            "x": 5,
+            "y": 0
+          },
+          {
+            "x": 6,
+            "y": 0
+          }
+        ],
+        "ghostY": 18
+      },
+      "board": [
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        ".........."
+      ],
+      "lastClear": 4,
+      "fixture": "four",
+      "best": 39,
+      "muted": false,
+      "audio": {
+        "state": "running",
+        "cueCount": 10,
+        "voices": 0
+      },
+      "lastEvents": [
+        {
+          "id": 2,
+          "type": "drop",
+          "pieceId": 2,
+          "distance": 17,
+          "points": 34,
+          "cells": [
+            {
+              "x": 4,
+              "y": 16
+            },
+            {
+              "x": 4,
+              "y": 17
+            },
+            {
+              "x": 4,
+              "y": 18
+            },
+            {
+              "x": 4,
+              "y": 19
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "type": "lock",
+          "pieceId": 2,
+          "cells": [
+            {
+              "x": 4,
+              "y": 16
+            },
+            {
+              "x": 4,
+              "y": 17
+            },
+            {
+              "x": 4,
+              "y": 18
+            },
+            {
+              "x": 4,
+              "y": 19
+            }
+          ],
+          "color": "I"
+        },
+        {
+          "id": 4,
+          "type": "clear",
+          "pieceId": 2,
+          "count": 4,
+          "rows": [
+            16,
+            17,
+            18,
+            19
+          ],
+          "points": 800,
+          "score": 834
+        },
+        {
+          "id": 5,
+          "type": "pause",
+          "pieceId": 3
+        }
+      ]
+    }
+  },
+  {
+    "test": "升级场景",
+    "state": {
+      "status": "paused",
+      "score": 138,
+      "lines": 10,
+      "level": 2,
+      "elapsed": 326,
+      "held": null,
+      "holdUsed": false,
+      "next": [
+        "L",
+        "O",
+        "J"
+      ],
+      "seed": 20260831,
+      "active": {
+        "type": "I",
+        "x": 3,
+        "y": -1,
+        "rotation": 0,
+        "id": 3,
+        "cells": [
+          {
+            "x": 3,
+            "y": 0
+          },
+          {
+            "x": 4,
+            "y": 0
+          },
+          {
+            "x": 5,
+            "y": 0
+          },
+          {
+            "x": 6,
+            "y": 0
+          }
+        ],
+        "ghostY": 17
+      },
+      "board": [
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "....OO...."
+      ],
+      "lastClear": 1,
+      "fixture": "level",
+      "best": 39,
+      "muted": false,
+      "audio": {
+        "state": "running",
+        "cueCount": 14,
+        "voices": 0
+      },
+      "lastEvents": [
+        {
+          "id": 2,
+          "type": "drop",
+          "pieceId": 2,
+          "distance": 19,
+          "points": 38,
+          "cells": [
+            {
+              "x": 4,
+              "y": 18
+            },
+            {
+              "x": 5,
+              "y": 18
+            },
+            {
+              "x": 4,
+              "y": 19
+            },
+            {
+              "x": 5,
+              "y": 19
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "type": "lock",
+          "pieceId": 2,
+          "cells": [
+            {
+              "x": 4,
+              "y": 18
+            },
+            {
+              "x": 5,
+              "y": 18
+            },
+            {
+              "x": 4,
+              "y": 19
+            },
+            {
+              "x": 5,
+              "y": 19
+            }
+          ],
+          "color": "O"
+        },
+        {
+          "id": 4,
+          "type": "clear",
+          "pieceId": 2,
+          "count": 1,
+          "rows": [
+            19
+          ],
+          "points": 100,
+          "score": 138
+        },
+        {
+          "id": 5,
+          "type": "level",
+          "pieceId": 2,
+          "level": 2
+        },
+        {
+          "id": 6,
+          "type": "pause",
+          "pieceId": 3
+        }
+      ]
+    }
+  },
+  {
+    "test": "top out",
+    "state": {
+      "status": "over",
+      "score": 0,
+      "lines": 0,
+      "level": 1,
+      "elapsed": 273,
+      "held": null,
+      "holdUsed": false,
+      "next": [
+        "I",
+        "L",
+        "O"
+      ],
+      "seed": 20260831,
+      "active": {
+        "type": "O",
+        "x": 4,
+        "y": -2,
+        "rotation": 0,
+        "id": 2,
+        "cells": [
+          {
+            "x": 4,
+            "y": -2
+          },
+          {
+            "x": 5,
+            "y": -2
+          },
+          {
+            "x": 4,
+            "y": -1
+          },
+          {
+            "x": 5,
+            "y": -1
+          }
+        ],
+        "ghostY": -2
+      },
+      "board": [
+        "...JJJJ...",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        ".........."
+      ],
+      "lastClear": 0,
+      "fixture": "over",
+      "best": 39,
+      "muted": false,
+      "audio": {
+        "state": "running",
+        "cueCount": 16,
+        "voices": 3
+      },
+      "lastEvents": [
+        {
+          "id": 3,
+          "type": "drop",
+          "pieceId": 2,
+          "distance": 0,
+          "points": 0,
+          "cells": [
+            {
+              "x": 4,
+              "y": -2
+            },
+            {
+              "x": 5,
+              "y": -2
+            },
+            {
+              "x": 4,
+              "y": -1
+            },
+            {
+              "x": 5,
+              "y": -1
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "type": "over",
+          "pieceId": 2,
+          "score": 0
+        }
+      ]
+    }
+  },
+  {
+    "test": "restart and storage reload",
+    "before": {
+      "status": "paused",
+      "score": 0,
+      "lines": 0,
+      "level": 1,
+      "elapsed": 276,
+      "held": null,
+      "holdUsed": false,
+      "next": [
+        "J",
+        "Z",
+        "I"
+      ],
+      "seed": 1464720590,
+      "active": {
+        "type": "S",
+        "x": 3,
+        "y": -1,
+        "rotation": 0,
+        "id": 1,
+        "cells": [
+          {
+            "x": 4,
+            "y": -1
+          },
+          {
+            "x": 5,
+            "y": -1
+          },
+          {
+            "x": 3,
+            "y": 0
+          },
+          {
+            "x": 4,
+            "y": 0
+          }
+        ],
+        "ghostY": 18
+      },
+      "board": [
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        ".........."
+      ],
+      "lastClear": 0,
+      "fixture": null,
+      "best": 39,
+      "muted": true,
+      "audio": {
+        "state": "running",
+        "cueCount": 17,
+        "voices": 0
+      },
+      "lastEvents": [
+        {
+          "id": 1,
+          "type": "start",
+          "pieceId": 1
+        },
+        {
+          "id": 2,
+          "type": "pause",
+          "pieceId": 1
+        }
+      ]
+    },
+    "after": {
+      "status": "ready",
+      "score": 0,
+      "lines": 0,
+      "level": 1,
+      "elapsed": 0,
+      "held": null,
+      "holdUsed": false,
+      "next": [],
+      "active": null,
+      "board": [
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        ".........."
+      ],
+      "lastClear": 0,
+      "fixture": null,
+      "best": 39,
+      "muted": true,
+      "audio": {
+        "state": "not-created",
+        "cueCount": 0,
+        "voices": 0
+      },
+      "lastEvents": []
+    }
+  },
+  {
+    "test": "help pauses game and closes safely",
+    "state": {
+      "status": "paused",
+      "score": 0,
+      "lines": 0,
+      "level": 1,
+      "elapsed": 327,
+      "held": null,
+      "holdUsed": false,
+      "next": [
+        "Z",
+        "L",
+        "O"
+      ],
+      "seed": 1464721640,
+      "active": {
+        "type": "S",
+        "x": 3,
+        "y": -1,
+        "rotation": 0,
+        "id": 1,
+        "cells": [
+          {
+            "x": 4,
+            "y": -1
+          },
+          {
+            "x": 5,
+            "y": -1
+          },
+          {
+            "x": 3,
+            "y": 0
+          },
+          {
+            "x": 4,
+            "y": 0
+          }
+        ],
+        "ghostY": 18
+      },
+      "board": [
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        ".........."
+      ],
+      "lastClear": 0,
+      "fixture": null,
+      "best": 39,
+      "muted": true,
+      "audio": {
+        "state": "not-created",
+        "cueCount": 0,
+        "voices": 0
+      },
+      "lastEvents": [
+        {
+          "id": 1,
+          "type": "start",
+          "pieceId": 1
+        },
+        {
+          "id": 2,
+          "type": "pause",
+          "pieceId": 1
+        }
+      ]
+    }
+  },
+  {
+    "test": "background pause",
+    "state": {
+      "status": "running",
+      "score": 0,
+      "lines": 0,
+      "level": 1,
+      "elapsed": 767,
+      "held": null,
+      "holdUsed": false,
+      "next": [
+        "Z",
+        "L",
+        "O"
+      ],
+      "seed": 1464721640,
+      "active": {
+        "type": "S",
+        "x": 3,
+        "y": -1,
+        "rotation": 0,
+        "id": 1,
+        "cells": [
+          {
+            "x": 4,
+            "y": -1
+          },
+          {
+            "x": 5,
+            "y": -1
+          },
+          {
+            "x": 3,
+            "y": 0
+          },
+          {
+            "x": 4,
+            "y": 0
+          }
+        ],
+        "ghostY": 18
+      },
+      "board": [
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        ".........."
+      ],
+      "lastClear": 0,
+      "fixture": null,
+      "best": 39,
+      "muted": true,
+      "audio": {
+        "state": "not-created",
+        "cueCount": 0,
+        "voices": 0
+      },
+      "lastEvents": [
+        {
+          "id": 1,
+          "type": "start",
+          "pieceId": 1
+        },
+        {
+          "id": 2,
+          "type": "pause",
+          "pieceId": 1
+        },
+        {
+          "id": 3,
+          "type": "resume",
+          "pieceId": 1
+        }
+      ]
+    },
+    "result": "not verified: creating a background automation tab did not change document focus"
+  },
+  {
+    "test": "390px pointer controls",
+    "state": {
+      "status": "paused",
+      "score": 38,
+      "lines": 0,
+      "level": 1,
+      "elapsed": 2126,
+      "held": "S",
+      "holdUsed": false,
+      "next": [
+        "Z",
+        "J",
+        "O"
+      ],
+      "seed": 1464776441,
+      "active": {
+        "type": "I",
+        "x": 3,
+        "y": -1,
+        "rotation": 0,
+        "id": 3,
+        "cells": [
+          {
+            "x": 3,
+            "y": 0
+          },
+          {
+            "x": 4,
+            "y": 0
+          },
+          {
+            "x": 5,
+            "y": 0
+          },
+          {
+            "x": 6,
+            "y": 0
+          }
+        ],
+        "ghostY": 16
+      },
+      "board": [
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        ".....T....",
+        "....TTT..."
+      ],
+      "lastClear": 0,
+      "fixture": null,
+      "best": 39,
+      "muted": true,
+      "audio": {
+        "state": "not-created",
+        "cueCount": 0,
+        "voices": 0
+      },
+      "lastEvents": [
+        {
+          "id": 1,
+          "type": "start",
+          "pieceId": 1
+        },
+        {
+          "id": 2,
+          "type": "move",
+          "pieceId": 1
+        },
+        {
+          "id": 3,
+          "type": "rotate",
+          "pieceId": 1
+        },
+        {
+          "id": 4,
+          "type": "hold",
+          "pieceId": 2
+        },
+        {
+          "id": 5,
+          "type": "move",
+          "pieceId": 2
+        },
+        {
+          "id": 6,
+          "type": "drop",
+          "pieceId": 2,
+          "distance": 19,
+          "points": 38,
+          "cells": [
+            {
+              "x": 5,
+              "y": 18
+            },
+            {
+              "x": 4,
+              "y": 19
+            },
+            {
+              "x": 5,
+              "y": 19
+            },
+            {
+              "x": 6,
+              "y": 19
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "type": "lock",
+          "pieceId": 2,
+          "cells": [
+            {
+              "x": 5,
+              "y": 18
+            },
+            {
+              "x": 4,
+              "y": 19
+            },
+            {
+              "x": 5,
+              "y": 19
+            },
+            {
+              "x": 6,
+              "y": 19
+            }
+          ],
+          "color": "T"
+        },
+        {
+          "id": 8,
+          "type": "pause",
+          "pieceId": 3
+        }
+      ]
+    }
+  },
+  {
+    "test": "320px layout",
+    "width": 320,
+    "noHorizontalOverflow": true
+  },
+  {
+    "test": "file URL launch",
+    "result": "blocked by browser URL policy; no workaround attempted. HTTP runtime was tested separately."
+  },
+  {
+    "test": "clear test-only local record",
+    "best": 0,
+    "muted": false
+  },
+  {
+    "test": "normal seven-piece placement",
+    "state": {
+      "status": "running",
+      "score": 232,
+      "lines": 0,
+      "level": 1,
+      "elapsed": 1942,
+      "held": null,
+      "holdUsed": false,
+      "next": [
+        "J",
+        "L",
+        "I"
+      ],
+      "seed": 1464950392,
+      "active": {
+        "type": "Z",
+        "x": 3,
+        "y": -1,
+        "rotation": 0,
+        "id": 8,
+        "cells": [
+          {
+            "x": 3,
+            "y": -1
+          },
+          {
+            "x": 4,
+            "y": -1
+          },
+          {
+            "x": 4,
+            "y": 0
+          },
+          {
+            "x": 5,
+            "y": 0
+          }
+        ],
+        "ghostY": 15
+      },
+      "board": [
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "........T.",
+        ".......TTT",
+        "OO.....I..",
+        "OO.....I..",
+        ".J.....I..",
+        ".JJJL..I..",
+        ".SS.L.ZZ..",
+        "SS..LL.ZZ."
+      ],
+      "lastClear": 0,
+      "fixture": null,
+      "best": 232,
+      "muted": false,
+      "audio": {
+        "state": "running",
+        "cueCount": 13,
+        "voices": 0
+      },
+      "lastEvents": [
+        {
+          "id": 28,
+          "type": "drop",
+          "pieceId": 6,
+          "distance": 15,
+          "points": 30,
+          "cells": [
+            {
+              "x": 0,
+              "y": 14
+            },
+            {
+              "x": 1,
+              "y": 14
+            },
+            {
+              "x": 0,
+              "y": 15
+            },
+            {
+              "x": 1,
+              "y": 15
+            }
+          ]
+        },
+        {
+          "id": 29,
+          "type": "lock",
+          "pieceId": 6,
+          "cells": [
+            {
+              "x": 0,
+              "y": 14
+            },
+            {
+              "x": 1,
+              "y": 14
+            },
+            {
+              "x": 0,
+              "y": 15
+            },
+            {
+              "x": 1,
+              "y": 15
+            }
+          ],
+          "color": "O"
+        },
+        {
+          "id": 30,
+          "type": "move",
+          "pieceId": 7
+        },
+        {
+          "id": 31,
+          "type": "move",
+          "pieceId": 7
+        },
+        {
+          "id": 32,
+          "type": "move",
+          "pieceId": 7
+        },
+        {
+          "id": 33,
+          "type": "move",
+          "pieceId": 7
+        },
+        {
+          "id": 34,
+          "type": "drop",
+          "pieceId": 7,
+          "distance": 13,
+          "points": 26,
+          "cells": [
+            {
+              "x": 8,
+              "y": 12
+            },
+            {
+              "x": 7,
+              "y": 13
+            },
+            {
+              "x": 8,
+              "y": 13
+            },
+            {
+              "x": 9,
+              "y": 13
+            }
+          ]
+        },
+        {
+          "id": 35,
+          "type": "lock",
+          "pieceId": 7,
+          "cells": [
+            {
+              "x": 8,
+              "y": 12
+            },
+            {
+              "x": 7,
+              "y": 13
+            },
+            {
+              "x": 8,
+              "y": 13
+            },
+            {
+              "x": 9,
+              "y": 13
+            }
+          ],
+          "color": "T"
+        }
+      ]
+    }
+  },
+  {
+    "test": "1280x800 desktop layout",
+    "result": "no horizontal overflow; touch controls hidden; screenshot inspected"
+  },
+  {
+    "test": "final cleanup",
+    "state": {
+      "status": "ready",
+      "score": 0,
+      "lines": 0,
+      "level": 1,
+      "elapsed": 0,
+      "held": null,
+      "holdUsed": false,
+      "next": [],
+      "seed": 1464950392,
+      "active": null,
+      "board": [
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        "..........",
+        ".........."
+      ],
+      "lastClear": 0,
+      "fixture": null,
+      "best": 0,
+      "muted": false,
+      "audio": {
+        "state": "running",
+        "cueCount": 13,
+        "voices": 0
+      },
+      "lastEvents": []
+    }
+  }
+]
